@@ -78,7 +78,7 @@ local function flyVehicleTo(position)
 
 	local root = vehicle.PrimaryPart or vehicle:FindFirstChildWhichIsA("BasePart")
 	local target = position
-	local step, delayTime = 2, 0.01
+	local step, delayTime = 1.8, 0.01
 
 	local function pivot(x, y, z)
 		vehicle:PivotTo(CFrame.new(x, y, z))
